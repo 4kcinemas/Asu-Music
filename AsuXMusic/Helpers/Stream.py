@@ -160,7 +160,7 @@ async def start_stream_audio(
             videoid, message.from_user.id
         )
         await mystic.delete()
-        cap = f"<b>➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b>\n\n<b>✨ ᴛɪᴛʟᴇ :</b> [ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ]({link})\n☁ <b>ᴅᴜʀᴀᴛɪᴏɴ :</b> {duration_min} ᴍɪɴᴜᴛᴇs\n🥀 <b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {message.from_user.first_name}"
+        cap = f"<b>➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ</b>\n\n<b>🌟 ᴛɪᴛʟᴇ :</b> [ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ]({link})\n⭕ <b>ᴅᴜʀᴀᴛɪᴏɴ :</b> {duration_min} ᴍɪɴᴜᴛᴇs\n👑 <b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {message.from_user.first_name}\n⚡ <b>ᴘᴏᴡᴇʀᴇᴅ ʙʏ :</b> @AboutSarathi"
         final_output = await message.reply_photo(
             photo="AsuXMusic/Utilities/Audio.jpeg",
             reply_markup=InlineKeyboardMarkup(buttons),
